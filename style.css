@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eeeeee;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #000000;
+}
+
+.navbar {
+    background-color: #666666;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+.navbar .liens{
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px 10px 50px;
+}
+.navbar .liens a{
+    padding: 10px;
+    margin: 10px;
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+  #logo{
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+
+  .homecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#homepc {
+    width: 500px;
+    height: auto;
+    margin: 20px 20px;
+    border-radius: 20%;
+
+}
+
+p{
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+#nom{
+  font-family:"Montserrat", sans-serif;
+    font-size: 50px;
+    color: #333;
+    
+}
+
+#about{
+  height: 300px;
+  width: 900px;
+  margin: 200px;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #dad9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#about:hover{
+  background-color: #666666;
+  scale: 0.9;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.homePresentation{
+  margin: 10px;
+  padding: 30px;
+  background-color: #dad9d9;
+  width: 500px;
+  border-radius: 30px;
+}
+.homePresentation:hover{
+  background-color: #64bfec;
+  scale: 1.1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#icons1{
+  font-size: 100px;
+  color: #0088cc;
+}
+
+
+
+#top-link {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#top-link:hover {
+  background-color: gray;
+  color: black;
+}
