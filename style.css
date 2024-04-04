@@ -25,6 +25,15 @@ h1 {
   font-style: normal;
   color: #000000;
 }
+
+p {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* header */
 header {
   display: flex;
   justify-content: space-around;
@@ -63,6 +72,14 @@ header {
   text-decoration: none;
   font-size: 14px;
 }
+.navbar .liens a:hover{
+  color: #ffffff;
+  background-color: #007aff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+}
 
 #logo {
   height: 40px;
@@ -73,24 +90,20 @@ header {
   border-radius: 50%;
 }
 
+
+/* home */
 .homecontainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 50px;
 }
 
 #homepc {
   width: 500px;
   height: auto;
-  margin: 20px 20px;
-  border-radius: 20%;
-}
-
-p {
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  border-radius: 30px 0 0 30px ;
+  margin: 0px;
 }
 
 #nom {
@@ -99,61 +112,66 @@ p {
   color: #333;
 }
 
-#about {
-  height: 300px;
-  width: 900px;
-  margin: 200px;
-  padding: 50px;
-  border-radius: 20px;
-  background-color: #dad9d9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#about:hover {
-  background-color: #ffffff;
-  scale: 1.1;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
 .homePresentation {
-  margin: 10px;
+  margin: 0px;
   padding: 30px;
   background-color: #dad9d9;
   width: 500px;
-  border-radius: 30px;
+  height: 360px;
+  border-radius: 0 30px 30px 0;
 }
 .homePresentation:hover {
-  background-color: #bb1e1e;
-  scale: 1.01;
+  background-color:#67b0ff;
   transition: 0.5s;
   cursor: pointer;
 }
 
-#icons1 {
-  font-size: 100px;
-  color: #0088cc;
-}
-
-#top-link {
-  background-color: #f1f1f1;
-  color: #333;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
+/* about */
+.about {
+  background-color: #f9f9f9;
+  padding: 50px;
   text-align: center;
 }
 
-#top-link:hover {
-  background-color: gray;
-  color: black;
+.about h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+#icons1 i {
+  font-size: 3rem;
+  color: #007bff;
+  margin: 20px;
+  transition: transform 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+#icons1 i:hover {
+  transform: scale(1.2);
+  color: #E44D26;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about {
+      padding: 30px;
+  }
+  .about h1 {
+      font-size: 2rem;
+  }
+  .about p {
+      font-size: 1rem;
+  }
 }
 
 
-
-
+/* work */
 .work {
   display: flex;
   justify-content: space-around;
@@ -166,6 +184,11 @@ p {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.work div:hover {
+  transform: scale(1.05);
 }
 
 .work h1 {
@@ -184,7 +207,7 @@ work li {
   font-size: 1.1rem;
 }
 
-
+/* resume */
 .resume {
   display: flex;
   flex-direction: column;
@@ -210,7 +233,7 @@ work li {
   border-radius: 5px;
 }
 
-
+/* contact */
 .contact {
   background-color: #f5f5f5;
   padding: 40px;
@@ -269,3 +292,4 @@ work li {
 .contact input[type="submit"]:hover {
   background-color: #0056b3;
 }
+
