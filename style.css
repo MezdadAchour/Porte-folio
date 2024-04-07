@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #eeeeee;
   font-family: "Montserrat", sans-serif;
@@ -40,6 +44,7 @@ header {
   padding-bottom: 50px;
 }
 .navbar {
+  z-index: 1;
   position: fixed;
   width: 99%;
   background-color: #666666;
@@ -97,6 +102,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 50px;
+  margin: 100px;
 }
 
 #homepc {
@@ -157,25 +163,12 @@ header {
   color: #E44D26;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .about {
-      padding: 30px;
-  }
-  .about h1 {
-      font-size: 2rem;
-  }
-  .about p {
-      font-size: 1rem;
-  }
-}
-
-
 /* work */
 .work {
   display: flex;
   justify-content: space-around;
   padding: 40px;
+  margin: 80px;
 }
 
 .work div {
@@ -188,11 +181,11 @@ header {
 }
 
 .work div:hover {
-  transform: scale(1.05);
+  transform: scale(105%);
 }
 
 .work h1 {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #007aff;
@@ -204,20 +197,36 @@ header {
 
 work li {
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 18px; 
 }
 
 /* resume */
 .resume {
+  position: relative;
+  width: 90%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.content {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
-  border-radius: 10px;
+  justify-content: center;
   padding: 20px;
-  margin: 20px;
-  width: 50%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 200px;
+  background-color: rgba(255, 255, 255, 0.7); /* Ajoute un fond semi-transparent pour le contenu */
 }
 
 .download-link {
@@ -233,12 +242,15 @@ work li {
   border-radius: 5px;
 }
 
+
+
 /* contact */
 .contact {
   background-color: #f5f5f5;
   padding: 40px;
   border-radius: 10px;
   text-align: center;
+  margin: 50px;
 }
 
 .contact h1 {
@@ -293,3 +305,18 @@ work li {
   background-color: #0056b3;
 }
 
+/* scroll bouton */
+#scrollToTopButton {
+  padding: 10px;
+  margin: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#scrollToTopButton:hover {
+  color: #ffffff;
+  background-color: #007aff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
